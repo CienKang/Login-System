@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+    background:#92bde7;
+    color:#485e74;
+    line-height:1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:1em;
+  }
+  header{
+      text-align: center;
+  }
+  
+  .heading-firebase{
+      font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: 0.5s;
+  }
+  .heading-firebase img{
+      width: 5%;
+      height: 5%;
+  }
+  .heading-firebase:hover{
+    transform: scale(1.2);
+  }
+  
+  input, button {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+    }
+    
+    .main-div{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 25%;
+      margin: 0px auto;
+      margin-top: 15px;
+      padding: 20px;
+      border: 2px solid #f9feff;
+      border-radius: 10px ;
+      background:#9dc7f1;
+      box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+    }
+    
+    .main-div input {
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #fff;
+      padding: 15px;
+      outline: none;
+      width: 100%;
+      margin-bottom: 20px;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+    }
+    
+    .main-div input:focus {
+      border: 1px solid #777;
+    }
+    
+    .main-div button{
+      background: #5d8ffc;
+      color: #fff;
+      border: 1px solid #5d8ffc;
+      border-radius: 5px;
+      padding: 15px;
+      display: block;
+      width: 100%;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+    }
+    
+    .main-div button:hover{
+      background: #fff;
+      color: #5d8ffc;
+      border: 1px solid #5d8ffc;
+      cursor: pointer;
+    }
+
+    .Rules p{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .rule-container{
+      padding: 10px ;
+      border-radius: 10px ;
+      color: black;
+      background:#9dc7f1;
+      box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+      margin-bottom: 10px;
+    }
+
+    .rule-container p{
+        font-size: 0.9rem;
+        margin: 10px 0;
+    }
