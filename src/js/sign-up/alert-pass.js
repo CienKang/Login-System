@@ -1,5 +1,7 @@
 import * as checkPass from "./check-pass.js";
 import * as ErrorsPara from "./all-Errors-ID.js"
+
+
 var password = document.getElementById('password_field');
 var confirmPass = document.getElementById('password_field_2');
 var emailID = document.getElementById('email_field');
@@ -45,36 +47,37 @@ function charAlert() {
         ErrorsPara.errorIndication(ErrorsPara.error4);
         password.style.border = '2px solid red';
     }
-    else{
+    else {
         ErrorsPara.errorFixed(ErrorsPara.error4);
     }
     if (currentCond.match("Numbers")) {
         ErrorsPara.errorIndication(ErrorsPara.error5);
         password.style.border = '2px solid red';
     }
-    else{
+    else {
         ErrorsPara.errorFixed(ErrorsPara.error5);
     }
-    if(currentCond.match("Checked"))
-    {
+    if (currentCond.match("Checked")) {
         ErrorsPara.fieldFixed(password);
     }
 }
 
 password.addEventListener('change', () => {
-        lengthAlert();
-        charAlert();
-    });
+    lengthAlert();
+    charAlert();
+});
 
-confirmPass.addEventListener('change',()=>{
-    if(checkPass.verifyPass(password.value,confirmPass.value) === 0)
-    confirmPass.style.border = '2px solid red';
+confirmPass.addEventListener('change', () => {
+    if (checkPass.verifyPass(password.value, confirmPass.value) === 0)
+        confirmPass.style.border = '2px solid red';
     else
-    ErrorsPara.fieldFixed(confirmPass);
+        ErrorsPara.fieldFixed(confirmPass);
 })
 
-emailID.addEventListener('change',()=>{
-    if(checkPass.emailVerifiy(emailID.value).match("[@,.]"))
-    emailID.style.border = '2px solid red';
+emailID.addEventListener('change', () => {
+    if (checkPass.emailVerifiy(emailID.value).match("[@,.]"))
+        emailID.style.border = '2px solid red';
     else ErrorsPara.fieldFixed(emailID);
 })
+
+export { emailID, password, confirmPass };

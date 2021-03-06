@@ -68,7 +68,7 @@ button {
   border: 1px solid #777;
 }
 
-.main-div button {
+.btn {
   background: #5d8ffc;
   color: #fff;
   border: 1px solid #5d8ffc;
@@ -81,7 +81,7 @@ button {
   -moz-transition: 0.3s;
 }
 
-.main-div button:hover {
+.btn:hover {
   background: #fff;
   color: #5d8ffc;
   border: 1px solid #5d8ffc;
