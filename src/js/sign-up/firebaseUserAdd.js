@@ -17,7 +17,7 @@ document.querySelector('.btn').addEventListener('click', (e) => {
             signIn.innerText = "Sign In";
             signIn.className = "btn";
             signIn.style.textAlign = "center";
-            signIn.href = '../../../index.html'
+            signIn.href = '../static/sign-in.html'
             document.body.appendChild(signIn);
         });
     }
