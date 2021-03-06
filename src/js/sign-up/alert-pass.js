@@ -1,6 +1,7 @@
 import * as checkPass from "./check-pass.js";
 import * as ErrorsPara from "./all-Errors-ID.js"
 var password = document.getElementById('password_field');
+var confirmPass = document.getElementById('password_field_2');
 var currentPass = "";
 var currentCond = ""
 
@@ -60,7 +61,13 @@ function charAlert() {
 }
 
 password.addEventListener('change', () => {
-        charAlert();
         lengthAlert();
-    })
+        charAlert();
+    });
 
+confirmPass.addEventListener('change',()=>{
+    if(checkPass.verifyPass(password.value,confirmPass.value) === 0)
+    confirmPass.style.border = '2px solid red';
+    else
+    ErrorsPara.fieldFixed(confirmPass);
+})

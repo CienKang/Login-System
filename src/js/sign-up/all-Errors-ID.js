@@ -8,12 +8,9 @@ function errorIndication(obj){
 }
 
 function errorFixed(obj){
-    obj.style.color = '#485e74';
+    obj.style.color = 'green';
 }
 
-function fieldError(obj){
-    
-}
 function fieldFixed(obj){
     obj.style.border = '2px solid green';
     obj.style.borderRadius = '5px';

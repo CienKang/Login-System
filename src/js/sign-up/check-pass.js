@@ -24,8 +24,8 @@ function checkConditions(password) {
 function verifyPass(password1 , password2)
 {
     if (password1 === password2)
-    return "Verified";
-    else "Not Verified";
+    return 1;
+    else  return 0;
 }
 
 export { checkConditions, checkLength , verifyPass};
