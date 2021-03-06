@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login System Via Firebase</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="../css/Sign-up.css">
+    <link rel="stylesheet" href="../css/Sign-Up.css">
 </head>
 
 <body>
@@ -22,17 +22,22 @@
         <div class="Rules">
             <p>For Sign-Up:</p>
             <div class="rule-container">
-                <p>Password Should be of min length 6</p>
-                <p>Password Should be of max length 12</p>
-                <p>Password Should contain atleast one Lowercase and Uppercase Alphabet</p>
-                <p>Password Should contain atleast one Special Character</p>
+                <p id="1">Password Should be of min length 6</p>
+                <p id="2">Password Should be of max length 12</p>
+                <p id="3">Password Should contain atleast one Lowercase and Uppercase Alphabet</p>
+                <p id="4">Password Should contain atleast one Special Character</p>
+                <p id="5">Password Should contain atleast one Numerical Character</p>
             </div>
         </div>
-        <input type="email" placeholder="Email..." id="email_field">
+        <input type="email" placeholder="Email..@..com" id="email_field">
         <input type="password" placeholder="Password..." id="password_field">
-        <input type="password" placeholder="Confirm Password..." id="password_field">
+        <input type="password" placeholder="Confirm Password..." id="password_field_2">
         <button onclick="setUp()">Sign Up for Account</button>
     </div>
+
+    <script type="module" src="../js/sign-up/all-Errors-ID.js"></script>
+    <script type="module"  src="../js/sign-up/check-pass.js"></script>
+    <script type="module" src="../js/sign-up/alert-pass.js"></script>
 </body>
 
 </html>
