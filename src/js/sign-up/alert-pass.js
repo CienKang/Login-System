@@ -2,6 +2,7 @@ import * as checkPass from "./check-pass.js";
 import * as ErrorsPara from "./all-Errors-ID.js"
 var password = document.getElementById('password_field');
 var confirmPass = document.getElementById('password_field_2');
+var emailID = document.getElementById('email_field');
 var currentPass = "";
 var currentCond = ""
 
@@ -70,4 +71,10 @@ confirmPass.addEventListener('change',()=>{
     confirmPass.style.border = '2px solid red';
     else
     ErrorsPara.fieldFixed(confirmPass);
+})
+
+emailID.addEventListener('change',()=>{
+    if(checkPass.emailVerifiy(emailID.value).match("[@,.]"))
+    emailID.style.border = '2px solid red';
+    else ErrorsPara.fieldFixed(emailID);
 })

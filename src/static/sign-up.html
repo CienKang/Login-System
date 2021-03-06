@@ -34,9 +34,28 @@
         <input type="password" placeholder="Confirm Password..." id="password_field_2">
         <button onclick="setUp()">Sign Up for Account</button>
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
 
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB999F48q89jGTVjwCwGe7MlbHBupTZT98",
+            authDomain: "login-system-a8a82.firebaseapp.com",
+            projectId: "login-system-a8a82",
+            storageBucket: "login-system-a8a82.appspot.com",
+            messagingSenderId: "536461682199",
+            appId: "1:536461682199:web:dce3164211b5a5c42ade52"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
     <script type="module" src="../js/sign-up/all-Errors-ID.js"></script>
-    <script type="module"  src="../js/sign-up/check-pass.js"></script>
+    <script type="module" src="../js/sign-up/check-pass.js"></script>
     <script type="module" src="../js/sign-up/alert-pass.js"></script>
 </body>
 
